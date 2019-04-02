@@ -1,7 +1,7 @@
 # WeatherApp-API
-Restful API for weather data
+**_Restful API for weather data_**
 
-This API is created to read a CSV file which contains weather data for a city for past 5 years and make modifications to data using GET, POST, DELETE API requests.
+_This API is created to read a CSV file which contains weather data for a city for past 5 years and make modifications to data using **GET, POST, DELETE API requests**._
 
 **API also holds following functionalities** 
 
@@ -30,12 +30,13 @@ This API is created to read a CSV file which contains weather data for a city fo
 
 ## Running code 
         1. Create a project folder in your local file system and copy the following files into it:
-                flaskapp_api
-                dailyweather.csv
+                flaskapp_api (Contains RESTFUL API code written in python)
+                dailyweather.csv (Contains 5 years of weather data for one city. Each record consists of three fields Date,                             Maximum_Temperature(TMAX) and Minimum_Temperature(TMIN)) 
            
          2. Go to linux shell and install all dependent libraries mentioned in previous section using the commands given with them in               the same order.
          
          3. Go to your project folder in command prompt and then run command "python3 flaskapp_api.py"
          
-         4. Your application will go live and then you can validate all endpoints using POSTMAN or any other api validating tools.
+         4. Your application will go live on "http://127.0.0.1:5000/" and then you can validate all endpoints using POSTMAN or any other             api validating tools by hitting different endpoints.
+            Example: http://127.0.0.1:5000/historical
 
